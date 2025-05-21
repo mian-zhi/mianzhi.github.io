@@ -1,15 +1,166 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>我的个人主页</title>
+    <title>Wenpu Li(李文朴)</title>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        h1 { color: #333; }
+          body {
+            font-family: Roboto, 'sans-serif';
+            font-size: 16px;
+            background-color: #FFFFFF;
+            color: #4F6071;
+          }
+          h1 {
+              font-weight: 300;
+              font-size: 2rem;
+          }
+          #header {
+            background-color: #f4f4f4;
+            /*background-color: #FFFFFF;*/
+            display: flex;
+            align-items: flex-end;
+            padding-top:60px;
+            padding-bottom:60px;
+          }
+          #footer {
+            background-color: #FFFFFF;
+            padding:60px;
+          }
+          #portrait {
+            border: 3px solid white;
+          }
+          #header-text {
+            margin-top: 60px;
+            margin-left: 220px;
+          }
+          #header-text-name {
+            font-size: 40px;
+          }
+          #header-text-title {
+              font-size: 17px;
+          }
+          #header-text-affiliation {
+              font-size: 17px;
+              margin-top: 10px;
+          }
+          #header-text-email {
+            margin-top: 10px;
+            font-size: 17px;
+            font-style: italic;
+          }
+          .header-text-desc {
+            font-size: 20px;
+          }
+          .vspace-top {
+            margin-top: 30px;
+          }
+          .vspace-top-news {
+              margin-top: 15px;
+          }
+          .paper-image {
+            width: 150px;
+          }
+          .news-date {
+              font-weight: bold;
+          }
+          .paper-title {
+            font-weight: bold;
+          }
+          .paper-authors {
+            font-style: italic;
+          }
     </style>
 </head>
+
 <body>
-    <h1>你好，我是张三！</h1>
-    <p>一名热爱编程的开发者。</p>
-    <p>GitHub: <a href="https://github.com/你的用户名">@你的用户名</a></p>
+    <div id='header'>
+        <div class='container'>
+            <div class='row'>
+                <div class="col-sm-3 offset-sm-1">
+                    <img src='imgs/liwenpu_portrait.jpg' class='img-fluid' id='portrait'>
+                </div>
+
+                <div class="col">
+                  <div id='header-text-name'>
+                      Wenpu Li(李文朴)
+                  </div>                  
+                  <div id='header-text-title'>
+                        🤔 <h5 style="display: inline;"><b>Think Different</b></h5> 🚀 <h5 style="display: inline;"><b>Go Further</b></h5>
+                  <!-- 🤔 <p style="font-size: 20px;"><b>Think Different</b></p> 🚀 <p style="font-size: 20px;"><b>Go Further</b></p> -->
+                  </div>
+                </br>
+                    <div id='header-text-title'>
+                        🧑🏻‍🔬 Research Assistant, <a href="https://ethliup.github.io/">Computer Vision and Geometric Learning lab (CVGL) </a>
+                    </div>
+                    <div id='header-text-affiliation'>
+                        🏢 Westlake University, School of Engineering </br>
+                        <a href="https://en-soe.westlake.edu.cn/OurSchool/program/programAI/">Department of Artificial Intelligence and Data Science (AI)</a></br>
+                    </div>
+                  <div id='header-text-title'>
+                        📭 liwenpu (at) westlake (dot) edu (dot) cn
+                  </div>
+                  <div>
+                    <a href="https://github.com/akawincent">[GitHub]</a>
+                    <a href="https://scholar.google.com/citations?user=C0mNwPkAAAAJ&hl=en">[Google Scholar]</a>
+                    <a href="https://www.zhihu.com/people/wincent-84">[Zhihu]</a>
+                    <!-- <a href="https://twitter.com/vincesitzmann">[Twitter]</a> -->
+                    <!-- <a href="https://sigmoid.social/@vsitzmann">[Mastodon]</a> -->
+                    <!-- <a href="docs/cv_vincent_sitzmann.pdf">[Download CV]</a> -->
+                  </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class='container'>
+        <div class='row vspace-top'>
+            <div class='col offset-sm-1'>
+                <h1>👋 Bio</h1>
+                <p>
+                    I am currently a Research Assistant at <a href="https://ethliup.github.io/">Computer Vision and Geometric Learning lab (CVGL) </a>
+                    supervised by <a href="https://en.westlake.edu.cn/faculty/peidong-liu.html">Prof. Peidong Liu</a>.
+                    I obtained bachelor degree of Information Engineering from Guangdong University of Technology in 2024.
+                    Previously, I worked as a research intern in CVGL during my senior year, focusing on 3D reconstruction.
+                    In the summer of 2023, I visited the University of Cambridge to study deep learning and computer vision.
+                    Before that, under the supervision of <a href="https://english.gdut.edu.cn/info/1025/1101.htm">Prof. Wei Meng</a>,
+                    I studied robotics and the application of computer vision in intelligent robots, such as VO/VIO/SLAM.
+                    </br> </br>
+                    My research interest lies in 3D vision and Robotics. 
+                    I aim to construct a representation of the real world in computers that mirrors human visual perception, 
+                    fully utilizing latent information in 2D images such as blur, optical flow, events, or camera poses. 
+                    I believe if we can reconstruct 3D/4D scenes in real-time from a video and obatain more information such as mesh, surface normal, texture, material and scene flow,   
+                    it will helps robots to think more like humans so that they know how to efficiently interact with the real world. 
+                </p>
+
+                <div class='vspace-top'>
+                    <h1>🎀 Acknowledgement</h1>
+
+                    <p> Thanks to Wenyi Zhang for taking the portrait for my homepage.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id='footer' class='vspace-top'>
+    <div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
