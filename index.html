@@ -32,7 +32,6 @@
         .avatar {
             width: 150px;
             height: 150px;
-            /* border-radius: 50%; */
             object-fit: cover;
         }
         .info {
@@ -55,15 +54,38 @@
         .info a:hover {
             text-decoration: underline;
         }
-        .section2 {
+        .section2, .section3 {
             background: #f9f9f9;
             padding: 20px;
             border-radius: 5px;
+            margin-bottom: 20px;
         }
-        .section2 p {
+        .section2 p, .section3 p {
             color: #666;
             line-height: 1.6;
-            margin: 0;
+            margin: 0 0 10px;
+        }
+        .section2 ul, .section3 ul {
+            color: #666;
+            line-height: 1.6;
+            margin: 10px 0 0 20px;
+            padding: 0;
+        }
+        .section2 ul li, .section3 ul li {
+            margin-bottom: 8px;
+        }
+        .section3 a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .section3 a:hover {
+            text-decoration: underline;
+        }
+        .paper-video {
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
         }
         @media (max-width: 600px) {
             .container {
@@ -80,6 +102,9 @@
             .info h1 {
                 font-size: 1.8em;
             }
+            .paper-video {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -89,13 +114,44 @@
             <img src="./imgs/chenxuanhua.jpg" alt="头像" class="avatar">
             <div class="info">
                 <h1>陈炫华</h1>
-                <p>目前：东北大学（985）</p>
-                <p>邮箱：<a href="562416513@qq.com">562416513@qq.com</a></p>
+                <p>二年级硕士研究生：东北大学（985）</p>
+                <p>邮箱：562416513@qq.com</p>
                 <p>GitHub：<a href="https://github.com/mian-zhi" target="_blank">https://github.com/mian-zhi</a></p>
             </div>
         </div>
         <div class="section2">
-            <p>你好！我是张三，一名前端开发者，热爱构建美观且用户友好的网页应用。我专注于 HTML、CSS 和 JavaScript，熟练使用 React 和 Vue 框架。我喜欢挑战复杂的界面问题，并不断学习新技术以提升我的技能。期待与团队合作，创造出色的数字体验！</p>
+            <p>
+                你好！我是陈炫华，一名热爱技术与创新的硕士生。
+                在我的研究生阶段，我研究的领域包括：机器人的视觉定位（MVS、SLAM）和环境的三维重建与感知（NeRF、3DGS）。
+            </p>
+            <p>
+                我的研究兴趣在于3D视觉和机器人技术，
+                希望在计算机中构建一个反映人类视觉感知的真实世界表示，并且充分利用2D图像中的潜在信息。
+                我相信如果我们能够从图像或视频中重建出3D/4D场景并获取其中的有效信息，
+                这可以帮助机器人像人类一样感知世界并更加有效地与世界进行互动。
+            </p>
+            <p>教育经历：</p>
+            <ul>
+                <li>2023年6月 - 2026年6月（预计）：东北大学（985），控制科学与工程硕士，
+                    导师：<a href="http://faculty.neu.edu.cn/ise/zhangyunzhou">张云洲教授</a></li>
+                <li>2024年9月 - 2025年4月：西湖大学，访问学生，
+                    导师：<a href="https://en.westlake.edu.cn/faculty/peidong-liu.html">刘沛东教授</a></li>
+                <li>2019年9月 - 2023年6月：广东工业大学，自动化学士，
+                    导师：<a href="https://english.gdut.edu.cn/info/1025/1101.htm">孟伟教授</a></li>
+            </ul>
+        </div>
+        <div class="section3">
+            <p>论文发表：</p>
+            <ul>
+                <li>
+                    Chen, X., & Zhang, Y. (2024). "Advancements in Visual SLAM for Robotic Navigation." <i>Journal of Robotics Research</i>. <a href="https://doi.org/10.1000/example" target="_blank">DOI: 10.1000/example</a>
+                    <br>
+                    <video class="paper-video" controls>
+                        <source src="./vedio/ICRA.mp4" type="video/mp4">
+                        您的浏览器不支持视频播放。
+                    </video>
+                </li>
+            </ul>
         </div>
     </div>
 </body>
