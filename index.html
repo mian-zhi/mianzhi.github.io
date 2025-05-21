@@ -1,166 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>Wenpu Li(李文朴)</title>
-
-    <!-- Meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈炫华</title>
     <style>
-          body {
-            font-family: Roboto, 'sans-serif';
-            font-size: 16px;
-            background-color: #FFFFFF;
-            color: #4F6071;
-          }
-          h1 {
-              font-weight: 300;
-              font-size: 2rem;
-          }
-          #header {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
             background-color: #f4f4f4;
-            /*background-color: #FFFFFF;*/
             display: flex;
-            align-items: flex-end;
-            padding-top:60px;
-            padding-bottom:60px;
-          }
-          #footer {
-            background-color: #FFFFFF;
-            padding:60px;
-          }
-          #portrait {
-            border: 3px solid white;
-          }
-          #header-text {
-            margin-top: 60px;
-            margin-left: 220px;
-          }
-          #header-text-name {
-            font-size: 40px;
-          }
-          #header-text-title {
-              font-size: 17px;
-          }
-          #header-text-affiliation {
-              font-size: 17px;
-              margin-top: 10px;
-          }
-          #header-text-email {
-            margin-top: 10px;
-            font-size: 17px;
-            font-style: italic;
-          }
-          .header-text-desc {
-            font-size: 20px;
-          }
-          .vspace-top {
-            margin-top: 30px;
-          }
-          .vspace-top-news {
-              margin-top: 15px;
-          }
-          .paper-image {
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .section1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .avatar {
             width: 150px;
-          }
-          .news-date {
-              font-weight: bold;
-          }
-          .paper-title {
-            font-weight: bold;
-          }
-          .paper-authors {
-            font-style: italic;
-          }
+            height: 150px;
+            /* border-radius: 50%; */
+            object-fit: cover;
+        }
+        .info {
+            flex: 1;
+            min-width: 200px;
+        }
+        .info h1 {
+            color: #333;
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+        .info p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .info a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .info a:hover {
+            text-decoration: underline;
+        }
+        .section2 {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .section2 p {
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+            .section1 {
+                flex-direction: column;
+                align-items: center;
+            }
+            .avatar {
+                width: 120px;
+                height: 120px;
+            }
+            .info h1 {
+                font-size: 1.8em;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <div id='header'>
-        <div class='container'>
-            <div class='row'>
-                <div class="col-sm-3 offset-sm-1">
-                    <img src='imgs/liwenpu_portrait.jpg' class='img-fluid' id='portrait'>
-                </div>
-
-                <div class="col">
-                  <div id='header-text-name'>
-                      Wenpu Li(李文朴)
-                  </div>                  
-                  <div id='header-text-title'>
-                        🤔 <h5 style="display: inline;"><b>Think Different</b></h5> 🚀 <h5 style="display: inline;"><b>Go Further</b></h5>
-                  <!-- 🤔 <p style="font-size: 20px;"><b>Think Different</b></p> 🚀 <p style="font-size: 20px;"><b>Go Further</b></p> -->
-                  </div>
-                </br>
-                    <div id='header-text-title'>
-                        🧑🏻‍🔬 Research Assistant, <a href="https://ethliup.github.io/">Computer Vision and Geometric Learning lab (CVGL) </a>
-                    </div>
-                    <div id='header-text-affiliation'>
-                        🏢 Westlake University, School of Engineering </br>
-                        <a href="https://en-soe.westlake.edu.cn/OurSchool/program/programAI/">Department of Artificial Intelligence and Data Science (AI)</a></br>
-                    </div>
-                  <div id='header-text-title'>
-                        📭 liwenpu (at) westlake (dot) edu (dot) cn
-                  </div>
-                  <div>
-                    <a href="https://github.com/akawincent">[GitHub]</a>
-                    <a href="https://scholar.google.com/citations?user=C0mNwPkAAAAJ&hl=en">[Google Scholar]</a>
-                    <a href="https://www.zhihu.com/people/wincent-84">[Zhihu]</a>
-                    <!-- <a href="https://twitter.com/vincesitzmann">[Twitter]</a> -->
-                    <!-- <a href="https://sigmoid.social/@vsitzmann">[Mastodon]</a> -->
-                    <!-- <a href="docs/cv_vincent_sitzmann.pdf">[Download CV]</a> -->
-                  </div>
-
-                </div>
+    <div class="container">
+        <div class="section1">
+            <img src="./imgs/chenxuanhua.jpg" alt="头像" class="avatar">
+            <div class="info">
+                <h1>陈炫华</h1>
+                <p>目前：东北大学（985）</p>
+                <p>邮箱：<a href="562416513@qq.com">562416513@qq.com</a></p>
+                <p>GitHub：<a href="https://github.com/mian-zhi" target="_blank">https://github.com/mian-zhi</a></p>
             </div>
         </div>
-    </div>
-
-
-    <div class='container'>
-        <div class='row vspace-top'>
-            <div class='col offset-sm-1'>
-                <h1>👋 Bio</h1>
-                <p>
-                    I am currently a Research Assistant at <a href="https://ethliup.github.io/">Computer Vision and Geometric Learning lab (CVGL) </a>
-                    supervised by <a href="https://en.westlake.edu.cn/faculty/peidong-liu.html">Prof. Peidong Liu</a>.
-                    I obtained bachelor degree of Information Engineering from Guangdong University of Technology in 2024.
-                    Previously, I worked as a research intern in CVGL during my senior year, focusing on 3D reconstruction.
-                    In the summer of 2023, I visited the University of Cambridge to study deep learning and computer vision.
-                    Before that, under the supervision of <a href="https://english.gdut.edu.cn/info/1025/1101.htm">Prof. Wei Meng</a>,
-                    I studied robotics and the application of computer vision in intelligent robots, such as VO/VIO/SLAM.
-                    </br> </br>
-                    My research interest lies in 3D vision and Robotics. 
-                    I aim to construct a representation of the real world in computers that mirrors human visual perception, 
-                    fully utilizing latent information in 2D images such as blur, optical flow, events, or camera poses. 
-                    I believe if we can reconstruct 3D/4D scenes in real-time from a video and obatain more information such as mesh, surface normal, texture, material and scene flow,   
-                    it will helps robots to think more like humans so that they know how to efficiently interact with the real world. 
-                </p>
-
-                <div class='vspace-top'>
-                    <h1>🎀 Acknowledgement</h1>
-
-                    <p> Thanks to Wenyi Zhang for taking the portrait for my homepage.</p>
-
-                </div>
-
-            </div>
+        <div class="section2">
+            <p>你好！我是张三，一名前端开发者，热爱构建美观且用户友好的网页应用。我专注于 HTML、CSS 和 JavaScript，熟练使用 React 和 Vue 框架。我喜欢挑战复杂的界面问题，并不断学习新技术以提升我的技能。期待与团队合作，创造出色的数字体验！</p>
         </div>
     </div>
-
-
-    <div id='footer' class='vspace-top'>
-    <div>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
 </body>
-
 </html>
