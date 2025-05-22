@@ -6,103 +6,163 @@
     <title>陈炫华</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f5f7fa;
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            line-height: 1.5;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 20px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            margin: 30px;
         }
         .section1 {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
-            margin-bottom: 20px;
+            gap: 30px;
+            margin-bottom: 30px;
+            align-items: center;
         }
         .avatar {
-            width: 150px;
-            height: 150px;
+            width: 160px;
+            height: 160px;
             object-fit: cover;
+            border-radius: 0%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+            padding: 5px;
         }
         .info {
             flex: 1;
-            min-width: 200px;
+            min-width: 250px;
         }
         .info h1 {
-            color: #333;
-            font-size: 2em;
-            margin: 0 0 10px;
+            color: #1a1a1a;
+            font-size: 2.2em;
+            margin: 0 0 12px;
+            font-weight: 700;
         }
         .info p {
-            color: #666;
-            margin: 5px 0;
+            color: #4a4a4a;
+            margin: 8px 0;
+            font-size: 1.1em;
         }
         .info a {
-            color: #007bff;
+            color: #0057d8;
             text-decoration: none;
+            transition: color 0.2s;
         }
         .info a:hover {
+            color: #003a8c;
             text-decoration: underline;
         }
         .section2, .section3 {
-            background: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
+            background: #fafafa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #e8ecef;
         }
         .section2 p, .section3 p {
-            color: #666;
-            line-height: 1.6;
-            margin: 0 0 10px;
+            color: #4a4a4a;
+            line-height: 1.7;
+            margin: 0 0 12px;
+            font-size: 1.05em;
         }
         .section2 ul, .section3 ul {
-            color: #666;
-            line-height: 1.6;
-            margin: 10px 0 0 20px;
+            color: #4a4a4a;
+            line-height: 1.7;
+            margin: 12px 0 0 20px;
             padding: 0;
+            list-style-type: disc;
         }
         .section2 ul li, .section3 ul li {
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            font-size: 1.05em;
         }
         .section3 a {
-            color: #007bff;
+            color: #0057d8;
             text-decoration: none;
+            transition: color 0.2s;
         }
         .section3 a:hover {
+            color: #003a8c;
             text-decoration: underline;
         }
         .paper-video {
-            margin-top: 15px;
-            max-width: 90%;
+            margin-top: 0px;
+            width: 100%;
+            max-width: 1000px;
             height: auto;
-            border-radius: 5px;
+            border-radius: 10px;
             display: block;
-            margin-left: 0;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .paper-item {
+            margin-top: 0px;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+        .paper-item:hover {
+            background: #f0f4f8;
+        }
+        .paper-icon {
+            width: 160px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: 8px;
+            background: white;
+            padding: 5px;
+            border: 1px solid #e8ecef;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
         @media (max-width: 600px) {
             .container {
-                padding: 15px;
+                padding: 20px;
+                margin: 15px;
             }
             .section1 {
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
             }
             .avatar {
                 width: 120px;
                 height: 120px;
             }
+            .info h1 {
+                font-size: 1.8em;
+            }
+            .info p {
+                font-size: 1em;
+            }
             .paper-video {
                 width: 100%;
+                max-width: 100%;
+            }
+            .paper-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .paper-icon {
+                width: 100%;
+                max-width: 160px;
+                height: 90px;
             }
         }
     </style>
@@ -119,7 +179,7 @@
             </div>
         </div>
         <div class="section2">
-            <p style="font-size: 1.2em;"><strong>个人简介</strong></p>
+            <p style="font-size: 1.3em; font-weight: 600; color: #1a1a1a;">个人简介</p>
             <p>
                 你好！我是陈炫华，一名热爱技术与创新的硕士生。
                 在我的研究生阶段，我研究的领域包括：机器人的视觉定位（MVS、SLAM）、环境的三维重建与感知（NeRF、3DGS）以及深度学习的相关技术。
@@ -130,8 +190,7 @@
                 我相信如果我们能够从图像或视频中重建出3D/4D场景并获取其中的有效信息，
                 这可以帮助机器人像人类一样感知世界并更加有效地与世界进行互动。
             </p>
-            
-            <p style="font-size: 1.2em;"><strong>教育经历</strong></p>
+            <p style="font-size: 1.3em; font-weight: 600; color: #1a1a1a;">教育经历</p>
             <ul>
                 <li>2023年9月 - 2026年6月（预计）：东北大学（985），控制科学与工程硕士，
                     导师：<a href="http://faculty.neu.edu.cn/ise/zhangyunzhou">张云洲教授</a></li>
@@ -142,12 +201,43 @@
             </ul>
         </div>
         <div class="section3">
-            <p style="font-size: 1.2em;"><strong>论文发表</strong></p>
+            <p style="font-size: 1.3em; font-weight: 600; color: #1a1a1a;">一作论文</p>
+            <div class="paper-item">
+                <img src="./imgs/icra.png" alt="Paper icon" class="paper-icon">
+                <div>
+                    <strong>VSS-SLAM: Voxelized Surfel Splatting for Geometrically Accurate SLAM</strong><br>
+                    ICRA 2025<br>
+                    <strong style="text-decoration: underline;">Xuanhua Chen</strong>, Yunzhou Zhang*, Zhiyao Zhang, Guoqing Wang, Bin Zhao, Xingshuo Wang<br>
+                </div>
+            </div>
+            <img src="./video/ICRA.gif" alt="Paper animation" class="paper-video">
+
+            <p style="font-size: 1.3em; font-weight: 600; color: #1a1a1a;">其他论文</p>
             <ul>
-                <strong>VSS-SLAM: Voxelized Surfel Splatting for Geometally Accurate SLAM</strong><br>
-                ICRA 2025<br>
-                <strong style="text-decoration: underline;">Xuanhua Chen</strong>, Yunzhou Zhang*, Zhiyao Zhang, Guoqing Wang, Bin Zhao, Xingshuo Wang
-                <img src="./video/ICRA.gif" alt="Paper animation" class="paper-video">
+                <li class="paper-item">
+                    <img src="./imgs/cvpr.png" alt="Paper icon" class="paper-icon">
+                    <div>
+                        <strong>IncEventGS: Pose-Free Gaussian Splatting from a Single Event Camera</strong><br>
+                        CVPR 2025 Highlights, 13.5% of all accepted papers<br>
+                        Jian Huang, Chengrui Dong, <strong style="text-decoration: underline;">Xuanhua Chen</strong>, Peidong Liu*
+                    </div>
+                </li>
+                <li class="paper-item">
+                    <img src="./imgs/ral.jpg" alt="Paper icon" class="paper-icon">
+                    <div>
+                        <strong>Full Body Motion Control for Aerial Manipulation Based on Critical Dynamic Constraints</strong><br>
+                        RAL 2025<br>
+                        Zhenting Wen, Yifeng Liao, Yufan Liu, <strong style="text-decoration: underline;">Xuanhua Chen</strong>, Wei Meng
+                    </div>
+                </li>
+                <li class="paper-item">
+                    <img src="./imgs/iros.jpg" alt="Paper icon" class="paper-icon">
+                    <div>
+                        <strong>FI-SLAM: Feature Fusion and Instance Reconstruction for Neural Implicit SLAM</strong><br>
+                        IROS 2024<br>
+                        Xingshuo Wang, Yunzhou Zhang*, Zhiyao Zhang, Mengting Wang, Zhiteng Li, <strong style="text-decoration: underline;">Xuanhua Chen</strong>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
